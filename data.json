@@ -1,0 +1,217 @@
+{
+  "user": {
+    "id": 1,
+    "name": "Diego Saggioro",
+    "address": "Rua Monsenhor Julio Maria, 118"
+  },
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Matsuri Concept",
+      "address": "Calle Falsa 123",
+      "phone": "555-1234",
+      "cuisine": "Japonesa",
+      "menus": [
+        {
+          "id": 1,
+          "name": "Niguiri",
+          "items": [
+            {
+              "id": 1,
+              "name": "Niguiri de Salmão",
+              "description": "Salmão fresco com arroz",
+              "price": 10.0
+            },
+            {
+              "id": 2,
+              "name": "Niguiri de Atum",
+              "description": "Atum fresco com arroz",
+              "price": 12.0
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Ceviches",
+          "description": "Um prato super refrescante de peixe fatiado e marinado com limão",
+          "items": [
+            {
+              "id": 1,
+              "name": "Ceviche de salmão",
+              "description": "salmão temperado com limão, cebola e pimenta",
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 22.9,
+                      "discountedPrice": 19.9
+                    },
+
+                    {
+                      "name": "Grande",
+                      "price": 28.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Temakis",
+          "items": [
+            {
+              "id": 1,
+              "name": "Califórnia",
+              "description": "Kani, pepino e maça ou manga",
+              "price": 17.0,
+              "discountedPrice": 13.99
+            },
+            {
+              "id": 2,
+              "name": "Filadélfia",
+              "description": "Arroz, salmão, cream cheese e cebolinha",
+              "price": 13.99
+            },
+            {
+              "id": 3,
+              "name": "Mix",
+              "description": "Escolha 3 ingredientes: shimeji, alface americana, rúcula, pepino, tomate seco, cream cheese, maionese, goiabada, banana, requeijão, molho de maracujá, manga, maçã e morango.",
+              "price": 13.99,
+              "flags": ["Picante", "Vegetariano"]
+            },
+            {
+              "id": 4,
+              "name": "Salmão picante",
+              "description": "Alga, arroz, salmão fresco, pimenta e cebolinha",
+              "flags": ["Picante"],
+              "price": 13.99
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Bebidas",
+          "items": [
+            {
+              "id": 1,
+              "name": "Coca-Cola",
+              "description": "Refrigerante de cola",
+              "price": 7.0
+            },
+            {
+              "id": 1,
+              "name": "Guaraná",
+              "description": "Refrigerante de guaraná",
+              "price": 7.0
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Sobremesas",
+          "items": [
+            {
+              "id": 1,
+              "name": "Ceviche",
+              "description": "Mix de peixes temperados em caldo cítrico, com cebola roxa e cebolinha.",
+              "price": 40.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Matsuri Concept",
+      "address": "Calle Falsa 123",
+      "phone": "555-1234",
+      "cuisine": "Japonesa",
+      "menus": [
+        {
+          "id": 1,
+          "name": "Niguiri",
+          "items": [
+            {
+              "id": 1,
+              "name": "Niguiri de Salmão",
+              "description": "Salmão fresco com arroz",
+              "price": 10.0
+            },
+            {
+              "id": 2,
+              "name": "Niguiri de Atum",
+              "description": "Atum fresco com arroz",
+              "price": 12.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
