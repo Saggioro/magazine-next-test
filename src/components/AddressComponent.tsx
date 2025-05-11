@@ -3,6 +3,7 @@
 import { useUserStore } from "@/stores/useUserStore";
 import { ThemedText } from "./ThemedText";
 import { useEffect } from "react";
+import Image from "next/image";
 
 const AddressComponent: React.FC = () => {
   const address = useUserStore((state) => state.user?.address);
@@ -11,9 +12,18 @@ const AddressComponent: React.FC = () => {
     fetc();
   }, []);
   return (
-    <ThemedText type="lightBold">
-      {address ? address + " >" : "Carregando endereço..."}
-    </ThemedText>
+    <div className="pb flex flex-row">
+      <ThemedText type="semiBold" size="small" color="headerPrimary">
+        {address ? address : "Carregando endereço..."}
+      </ThemedText>
+      <Image
+        src={"/arrowright.svg"}
+        alt="Fechar"
+        width={6}
+        height={6}
+        className="ml-2"
+      />
+    </div>
   );
 };
 

@@ -9,7 +9,9 @@ const Header: React.FC = () => {
       <div className="flex flex-row items-center">
         <Image src={"/pin.svg"} alt="Pin" width={32} height={32} />
         <div>
-          <ThemedText type="lightSubtitle">entregando em</ThemedText>
+          <ThemedText color="headerSecondary" size="small">
+            entregando em
+          </ThemedText>
           <AddressComponent />
         </div>
       </div>

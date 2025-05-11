@@ -36,7 +36,9 @@ const RestaurantCard: React.FC<
             height={24}
             className="mr-1 ml-2"
           />
-          <ThemedText type="bold">{restaurant?.review.toFixed(1)}</ThemedText>
+          <ThemedText type="bold" color="subtitle">
+            {restaurant?.review.toFixed(1)}
+          </ThemedText>
         </div>
       </div>
     </div>

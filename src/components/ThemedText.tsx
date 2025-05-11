@@ -1,42 +1,82 @@
-type VariantType =
-  | "default"
-  | "title"
-  | "subtitle"
+type VariantType = "default" | "semiBold" | "bold";
+
+type VariantColor =
+  | "primary"
+  | "headerPrimary"
+  | "headerSecondary"
   | "subtitle"
   | "footer"
-  | "bold"
-  | "lightBold"
-  | "lightSubtitle";
+  | "secondaryTitle"
+  | "discount";
+
+type VariantSize = "default" | "small" | "large";
+
+interface ThemedVariantColor {
+  colors: Record<VariantColor, string>;
+}
+interface ThemedVariantSize {
+  sizes: Record<VariantSize, string>;
+}
 interface ThemedVariant {
-  light: Record<VariantType, string>;
+  type: Record<VariantType, string>;
 }
 
 export type ThemedTextProps = React.HTMLAttributes<HTMLParagraphElement> & {
   type?: VariantType;
+  size?: VariantSize;
+  color?: VariantColor;
   extraClasses?: string;
 };
 
 const variantClasses: ThemedVariant = {
-  light: {
-    default: "text-base text-font-primary",
-    lightBold: "text-sm font-bold text-header-primary",
-    lightSubtitle: "text-light-subtitle text-base font-semibold",
-    bold: "text-sm font-bold text-font-primary",
-    title: "text-xl font-bold text-font-primary",
-    subtitle: "text-subtitle text-sm font-semibold",
-    footer: "text-base font-bold text-font-footer",
+  type: {
+    default: "",
+    semiBold: "font-semibold",
+    bold: "font-bold",
+  },
+};
+const variantSizes: ThemedVariantSize = {
+  sizes: {
+    default: "text-base",
+    large: "text-xl",
+    small: "text-sm",
+  },
+};
+
+const variantColors: ThemedVariantColor = {
+  colors: {
+    primary: "text-font-primary",
+    headerPrimary: "text-header-primary",
+    headerSecondary: "text-light-subtitle",
+    subtitle: "text-subtitle",
+    footer: "text-font-footer",
+    secondaryTitle: "text-status-title",
+    discount: "text-free-shipping",
   },
 };
 
 export function ThemedText({
   style,
   extraClasses,
+  size = "default",
   type = "default",
+  color = "primary",
   children,
   ...rest
 }: ThemedTextProps) {
   return (
-    <p className={variantClasses["light"][type] + " " + extraClasses} {...rest}>
+    <p
+      className={
+        variantClasses["type"][type] +
+        " " +
+        variantSizes["sizes"][size] +
+        " " +
+        variantColors["colors"][color] +
+        " " +
+        extraClasses
+      }
+      {...rest}
+    >
       {children}
     </p>
   );

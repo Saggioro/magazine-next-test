@@ -16,6 +16,7 @@
   --color-font-primary: #393a3c;
   --color-footer-background: #eef0f5;
   --color-card-background: #f5f6f9;
+  --color-discounted-price: #02a117;
 }
 
 @theme inline {

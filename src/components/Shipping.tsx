@@ -14,16 +14,13 @@ const Shipping: React.FC<IShippingProps> = ({ restaurant }) => {
             : "/frete-pago.svg"
         }
         alt="Frete"
-        width={24}
-        height={24}
+        width={22}
+        height={22}
         className="mr-1.5"
       />
       <ThemedText
-        className={
-          restaurant?.shippingPrice === 0
-            ? "text-free-shipping"
-            : "text-paid-shipping"
-        }
+        type="bold"
+        color={restaurant?.shippingPrice === 0 ? "discount" : "secondaryTitle"}
       >
         {restaurant?.shippingPrice === 0
           ? "grátis"

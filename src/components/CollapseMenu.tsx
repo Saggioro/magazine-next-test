@@ -19,13 +19,18 @@ const ColapseMenu: React.FC<PropsWithChildren<IColapseMenuProps>> = ({
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mb-1 p-2" onClick={() => setOpen(!open)}>
-      <div className="flex flex-row items-center justify-between">
+    <div className="mb-1 p-2">
+      <div
+        className="flex flex-row items-center justify-between"
+        onClick={() => setOpen(!open)}
+      >
         <div className="w-4/5">
           <Title {...titleProps} />
 
           {description && (
-            <ThemedText type="subtitle">{description}</ThemedText>
+            <ThemedText type="semiBold" size="large">
+              {description}
+            </ThemedText>
           )}
         </div>
         <div>

@@ -1,16 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import FlatList from "./FlatList";
-import { getViewHeight, getViewWidth } from "@/utils/viewUtils";
-import { get } from "http";
 import { useViewportSize } from "@/hooks/useViewSize";
 import { useRestaurantsStore } from "@/stores/useRestaurantsStore";
 import { ThemedText } from "./ThemedText";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useRestaurantStore } from "@/stores/useRestaurantStore";
-import { ListChildComponentProps } from "react-window";
 import RestaurantCard from "./RestaurantCard";
 
 const RestaurantsList: React.FC = () => {
@@ -35,7 +30,7 @@ const RestaurantsList: React.FC = () => {
     <div className="mt-4 pl-2">
       {restaurants.find((restaurant) => restaurant.open === true) ? (
         <>
-          <ThemedText type="title" extraClasses="text-status-title mb-2">
+          <ThemedText type="bold" color="secondaryTitle" extraClasses="mb-2">
             abertos
           </ThemedText>
 
@@ -57,7 +52,7 @@ const RestaurantsList: React.FC = () => {
 
       {restaurants.find((restaurant) => restaurant.open === false) && (
         <>
-          <ThemedText type="title" extraClasses="text-status-title mb-2">
+          <ThemedText type="bold" color="secondaryTitle" extraClasses="mb-2">
             fechados
           </ThemedText>
           <FlatList
