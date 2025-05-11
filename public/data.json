@@ -9,11 +9,16 @@
       "id": 1,
       "name": "Matsuri Concept",
       "address": "Calle Falsa 123",
+      "openingHour": "09:00",
+      "closingHour": "20:00",
       "phone": "555-1234",
+      "freeShippingLimit": 35,
+      "minimumOrder": 15,
+      "deliveryTimeAvg": 35,
       "cuisine": "Japonesa",
       "open": true,
       "logo": "/restaurantsImages/matsuri.png",
-      "shippingPrice": 0,
+      "shippingPrice": 4.99,
       "review": 4.7,
       "menus": [
         {
@@ -194,10 +199,12 @@
       "id": 2,
       "name": "Burger King",
       "address": "Calle Falsa 123",
+      "openingHour": "09:00",
+      "closingHour": "20:00",
       "phone": "555-1234",
       "cuisine": "Lanches",
       "logo": "/restaurantsImages/bk.png",
-      "shippingPrice": 5,
+      "shippingPrice": 0,
       "open": true,
       "review": 4.5,
       "menus": [
@@ -224,8 +231,374 @@
     {
       "id": 3,
       "name": "Burger King",
+      "open": true,
+      "address": "Calle Falsa 123",
+      "openingHour": "09:00",
+      "closingHour": "20:00",
+
+      "phone": "555-1234",
+      "cuisine": "Lanches",
+      "logo": "/restaurantsImages/bk.png",
+      "shippingPrice": 5,
+      "review": 4.5,
+      "menus": [
+        {
+          "id": 1,
+          "name": "Niguiri",
+          "items": [
+            {
+              "id": 1,
+              "name": "Niguiri de Salmão",
+              "description": "Salmão fresco com arroz",
+              "price": 10.0
+            },
+            {
+              "id": 2,
+              "name": "Niguiri de Atum",
+              "description": "Atum fresco com arroz",
+              "price": 12.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Burger King",
+      "open": true,
+      "address": "Calle Falsa 123",
+      "openingHour": "09:00",
+      "closingHour": "20:00",
+      "phone": "555-1234",
+      "cuisine": "Lanches",
+      "logo": "/restaurantsImages/bk.png",
+      "shippingPrice": 5,
+      "review": 4.5,
+      "menus": [
+        {
+          "id": 1,
+          "name": "Niguiri",
+          "items": [
+            {
+              "id": 1,
+              "name": "Niguiri de Salmão",
+              "description": "Salmão fresco com arroz",
+              "price": 10.0
+            },
+            {
+              "id": 2,
+              "name": "Niguiri de Atum",
+              "description": "Atum fresco com arroz",
+              "price": 12.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Burger King",
+      "open": true,
+      "address": "Calle Falsa 123",
+      "openingHour": "09:00",
+      "closingHour": "20:00",
+      "phone": "555-1234",
+      "cuisine": "Lanches",
+      "logo": "/restaurantsImages/bk.png",
+      "shippingPrice": 5,
+      "review": 4.5,
+      "menus": [
+        {
+          "id": 1,
+          "name": "Niguiri",
+          "items": [
+            {
+              "id": 1,
+              "name": "Niguiri de Salmão",
+              "description": "Salmão fresco com arroz",
+              "price": 10.0
+            },
+            {
+              "id": 2,
+              "name": "Niguiri de Atum",
+              "description": "Atum fresco com arroz",
+              "price": 12.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Burger King",
+      "open": true,
+      "address": "Calle Falsa 123",
+      "openingHour": "09:00",
+      "closingHour": "20:00",
+      "phone": "555-1234",
+      "cuisine": "Lanches",
+      "logo": "/restaurantsImages/bk.png",
+      "shippingPrice": 5,
+      "review": 4.5,
+      "menus": [
+        {
+          "id": 1,
+          "name": "Niguiri",
+          "items": [
+            {
+              "id": 1,
+              "name": "Niguiri de Salmão",
+              "description": "Salmão fresco com arroz",
+              "price": 10.0
+            },
+            {
+              "id": 2,
+              "name": "Niguiri de Atum",
+              "description": "Atum fresco com arroz",
+              "price": 12.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Burger King",
+      "open": true,
+      "address": "Calle Falsa 123",
+      "openingHour": "09:00",
+      "closingHour": "20:00",
+      "phone": "555-1234",
+      "cuisine": "Lanches",
+      "logo": "/restaurantsImages/bk.png",
+      "shippingPrice": 5,
+      "review": 4.5,
+      "menus": [
+        {
+          "id": 1,
+          "name": "Niguiri",
+          "items": [
+            {
+              "id": 1,
+              "name": "Niguiri de Salmão",
+              "description": "Salmão fresco com arroz",
+              "price": 10.0
+            },
+            {
+              "id": 2,
+              "name": "Niguiri de Atum",
+              "description": "Atum fresco com arroz",
+              "price": 12.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Burger King",
+      "open": true,
+      "address": "Calle Falsa 123",
+      "openingHour": "09:00",
+      "closingHour": "20:00",
+      "phone": "555-1234",
+      "cuisine": "Lanches",
+      "logo": "/restaurantsImages/bk.png",
+      "shippingPrice": 5,
+      "review": 4.5,
+      "menus": [
+        {
+          "id": 1,
+          "name": "Niguiri",
+          "items": [
+            {
+              "id": 1,
+              "name": "Niguiri de Salmão",
+              "description": "Salmão fresco com arroz",
+              "price": 10.0
+            },
+            {
+              "id": 2,
+              "name": "Niguiri de Atum",
+              "description": "Atum fresco com arroz",
+              "price": 12.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Burger King",
+      "open": true,
+      "address": "Calle Falsa 123",
+      "openingHour": "09:00",
+      "closingHour": "20:00",
+      "phone": "555-1234",
+      "cuisine": "Lanches",
+      "logo": "/restaurantsImages/bk.png",
+      "shippingPrice": 5,
+      "review": 4.5,
+      "menus": [
+        {
+          "id": 1,
+          "name": "Niguiri",
+          "items": [
+            {
+              "id": 1,
+              "name": "Niguiri de Salmão",
+              "description": "Salmão fresco com arroz",
+              "price": 10.0
+            },
+            {
+              "id": 2,
+              "name": "Niguiri de Atum",
+              "description": "Atum fresco com arroz",
+              "price": 12.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Burger King",
+      "open": true,
+      "address": "Calle Falsa 123",
+      "openingHour": "09:00",
+      "closingHour": "20:00",
+      "phone": "555-1234",
+      "cuisine": "Lanches",
+      "logo": "/restaurantsImages/bk.png",
+      "shippingPrice": 5,
+      "review": 4.5,
+      "menus": [
+        {
+          "id": 1,
+          "name": "Niguiri",
+          "items": [
+            {
+              "id": 1,
+              "name": "Niguiri de Salmão",
+              "description": "Salmão fresco com arroz",
+              "price": 10.0
+            },
+            {
+              "id": 2,
+              "name": "Niguiri de Atum",
+              "description": "Atum fresco com arroz",
+              "price": 12.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Burger King",
+      "open": true,
+      "address": "Calle Falsa 123",
+      "openingHour": "09:00",
+      "closingHour": "20:00",
+      "phone": "555-1234",
+      "cuisine": "Lanches",
+      "logo": "/restaurantsImages/bk.png",
+      "shippingPrice": 5,
+      "review": 4.5,
+      "menus": [
+        {
+          "id": 1,
+          "name": "Niguiri",
+          "items": [
+            {
+              "id": 1,
+              "name": "Niguiri de Salmão",
+              "description": "Salmão fresco com arroz",
+              "price": 10.0
+            },
+            {
+              "id": 2,
+              "name": "Niguiri de Atum",
+              "description": "Atum fresco com arroz",
+              "price": 12.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Burger King",
+      "open": true,
+      "address": "Calle Falsa 123",
+      "openingHour": "09:00",
+      "closingHour": "20:00",
+      "phone": "555-1234",
+      "cuisine": "Lanches",
+      "logo": "/restaurantsImages/bk.png",
+      "shippingPrice": 5,
+      "review": 4.5,
+      "menus": [
+        {
+          "id": 1,
+          "name": "Niguiri",
+          "items": [
+            {
+              "id": 1,
+              "name": "Niguiri de Salmão",
+              "description": "Salmão fresco com arroz",
+              "price": 10.0
+            },
+            {
+              "id": 2,
+              "name": "Niguiri de Atum",
+              "description": "Atum fresco com arroz",
+              "price": 12.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Burger King",
+      "open": true,
+      "address": "Calle Falsa 123",
+      "openingHour": "09:00",
+      "closingHour": "20:00",
+      "phone": "555-1234",
+      "cuisine": "Lanches",
+      "logo": "/restaurantsImages/bk.png",
+      "shippingPrice": 5,
+      "review": 4.5,
+      "menus": [
+        {
+          "id": 1,
+          "name": "Niguiri",
+          "items": [
+            {
+              "id": 1,
+              "name": "Niguiri de Salmão",
+              "description": "Salmão fresco com arroz",
+              "price": 10.0
+            },
+            {
+              "id": 2,
+              "name": "Niguiri de Atum",
+              "description": "Atum fresco com arroz",
+              "price": 12.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Burger King",
       "open": false,
       "address": "Calle Falsa 123",
+      "openingHour": "09:00",
+      "closingHour": "20:00",
       "phone": "555-1234",
       "cuisine": "Lanches",
       "logo": "/restaurantsImages/bk.png",
