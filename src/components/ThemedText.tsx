@@ -2,6 +2,7 @@ type VariantType =
   | "default"
   | "title"
   | "subtitle"
+  | "subtitle"
   | "footer"
   | "bold"
   | "lightBold"
@@ -18,11 +19,11 @@ export type ThemedTextProps = React.HTMLAttributes<HTMLParagraphElement> & {
 const variantClasses: ThemedVariant = {
   light: {
     default: "text-base text-font-primary",
-    lightBold: "text-base font-bold text-header-primary",
-    lightSubtitle: "text-subtitle text-base font-semibold",
+    lightBold: "text-sm font-bold text-header-primary",
+    lightSubtitle: "text-light-subtitle text-base font-semibold",
     bold: "text-sm font-bold text-font-primary",
     title: "text-xl font-bold text-font-primary",
-    subtitle: "text-subtitle text-base font-semibold",
+    subtitle: "text-subtitle text-sm font-semibold",
     footer: "text-base font-bold text-font-footer",
   },
 };
