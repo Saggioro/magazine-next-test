@@ -6,7 +6,8 @@
 }
 @theme {
   --color-header-background: #7b1fa2;
-  --color-subtitle: #eecffc;
+  --color-subtitle: #6d6f73;
+  --color-light-subtitle: #eecffc;
   --color-header-primary: #ffffff;
   --color-free-shipping: #027a7a;
   --color-paid-shipping: #7b1fa2;
