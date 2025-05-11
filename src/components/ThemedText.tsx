@@ -2,7 +2,7 @@ type VariantType =
   | "default"
   | "title"
   | "subtitle"
-  | "link"
+  | "footer"
   | "bold"
   | "lightBold"
   | "lightSubtitle";
@@ -23,7 +23,7 @@ const variantClasses: ThemedVariant = {
     bold: "text-sm font-bold text-font-primary",
     title: "text-base font-bold text-font-primary",
     subtitle: "text-subtitle text-base font-semibold",
-    link: "text-base text-blue-600 dark:text-blue-400 underline hover:opacity-80 transition",
+    footer: "text-base font-bold text-font-footer",
   },
 };
 
