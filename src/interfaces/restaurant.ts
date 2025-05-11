@@ -38,5 +38,10 @@ interface IRestaurant {
   logo: string;
   review: number;
   shippingPrice: number;
+  openingHour: string;
+  closingHour: string;
+  freeShippingLimit: number;
+  minimumOrder: number;
+  deliveryTimeAvg: number;
   menus: IMenu[];
 }
