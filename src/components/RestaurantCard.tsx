@@ -1,7 +1,7 @@
 import { ListChildComponentProps } from "react-window";
 import { ThemedText } from "./ThemedText";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Shipping from "./Shipping";
 
 const RestaurantCard: React.FC<
   ListChildComponentProps<{
@@ -13,14 +13,10 @@ const RestaurantCard: React.FC<
   return (
     <div
       onClick={() => {
-        try {
-          data.onClickAction(restaurant?.id);
-        } catch (error) {
-          console.error("Erro ao buscar restaurante:", error);
-        }
+        data.onClickAction?.(restaurant?.id);
       }}
       style={style}
-      className="2 bf-card-background mt-1 mb-1 flex flex-row items-center"
+      className="bg-card-background mt-1 mb-4 flex h-3/4 flex-row items-center"
     >
       <Image
         src={restaurant?.logo ?? "/logo.svg"}
@@ -32,28 +28,7 @@ const RestaurantCard: React.FC<
       <div>
         <ThemedText type="bold">{restaurant?.name}</ThemedText>
         <div className="flex flex-row items-center">
-          <Image
-            src={
-              restaurant?.shippingPrice === 0
-                ? "/frete-gratis.svg"
-                : "/frete-pago.svg"
-            }
-            alt="Frete"
-            width={24}
-            height={24}
-            className="mr-1.5"
-          />
-          <ThemedText
-            className={
-              restaurant?.shippingPrice === 0
-                ? "text-free-shipping"
-                : "text-paid-shipping"
-            }
-          >
-            {restaurant?.shippingPrice === 0
-              ? "grátis"
-              : `R$ ${restaurant?.shippingPrice.toFixed(2)}`}
-          </ThemedText>
+          <Shipping restaurant={restaurant} />
           <Image
             src={"/estrela.svg"}
             alt="Avaliação"

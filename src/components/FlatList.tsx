@@ -12,7 +12,7 @@ interface IFlatListProps {
   Row: ComponentType<ListChildComponentProps<any>>;
   itemData: {
     items: any[];
-    onClick?: (id: number) => void;
+    onClickAction?: (id: number) => void;
   };
 }
 

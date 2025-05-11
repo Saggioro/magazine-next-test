@@ -15,7 +15,7 @@ import RestaurantCard from "./RestaurantCard";
 
 const RestaurantsList: React.FC = () => {
   const { height, width } = useViewportSize();
-  const cardSize = 80;
+  const cardSize = 98;
   const restaurants = useRestaurantsStore((state) => state.restaurants) ?? [];
   const fetch = useRestaurantsStore((state) => state.fetchRestaurants);
   useEffect(() => {
@@ -43,11 +43,11 @@ const RestaurantsList: React.FC = () => {
             height={getHeight(getRestaurantsByStatus(true).length)}
             itemCount={getRestaurantsByStatus(true).length}
             itemSize={cardSize}
-            width={width * 0.8}
+            width={width * 0.97}
             Row={RestaurantCard}
             itemData={{
               items: getRestaurantsByStatus(true),
-              onClick: (id) => router.push(`/restaurant/${id}`),
+              onClickAction: (id) => router.push(`/restaurant/${id}`),
             }}
           />
         </>
@@ -64,7 +64,7 @@ const RestaurantsList: React.FC = () => {
             height={getHeight(getRestaurantsByStatus(false).length)}
             itemCount={getRestaurantsByStatus(false).length}
             itemSize={cardSize}
-            width={width * 0.8}
+            width={width * 0.97}
             Row={RestaurantCard}
             itemData={{
               items: getRestaurantsByStatus(false),
