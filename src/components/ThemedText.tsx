@@ -21,7 +21,7 @@ const variantClasses: ThemedVariant = {
     lightBold: "text-base font-bold text-header-primary",
     lightSubtitle: "text-subtitle text-base font-semibold",
     bold: "text-sm font-bold text-font-primary",
-    title: "text-base font-bold text-font-primary",
+    title: "text-xl font-bold text-font-primary",
     subtitle: "text-subtitle text-base font-semibold",
     footer: "text-base font-bold text-font-footer",
   },
