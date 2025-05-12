@@ -7,12 +7,13 @@ interface ISelectOptions {
 }
 interface ISelectedItem {
   id: number;
+  name: string;
   quantity: number;
   itemId: number;
   selectedExtras: ISelectOptions[];
 }
 interface ICart {
-  restaurant: { id: number; name: string };
+  restaurant: { id: number; name: string; image: string };
   count?: number;
   items: ISelectedItem[];
 }
@@ -20,7 +21,7 @@ interface ICart {
 interface ICartState {
   cart?: ICart;
   add: (
-    restaurant: { id: number; name: string },
+    restaurant: { id: number; name: string; image: string },
     item: ISelectedItem,
     count: number,
   ) => void;
@@ -46,7 +47,7 @@ export const useCartStore = create<ICartState>()(
                   restaurant: state.cart.restaurant,
                   items: [
                     ...newArray,
-                    { ...exist, quantity: exist.quantity + 1 },
+                    { ...item, quantity: exist.quantity + 1 },
                   ],
                   count: count,
                 },
