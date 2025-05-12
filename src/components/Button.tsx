@@ -2,7 +2,7 @@ import React from "react";
 
 interface CustomButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary";
+  variant?: "primary" | "secondary";
   size?: "sm" | "md" | "lg";
   loading?: boolean;
 }
@@ -26,6 +26,7 @@ const Button: React.FC<CustomButtonProps> = ({
 
   const variantStyles = {
     primary: "bg-button-primary text-white hover:bg-button-primary-shade",
+    secondary: "bg-button-secondary text-white hover:bg-button-secondary-shade",
   };
 
   return (
