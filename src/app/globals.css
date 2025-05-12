@@ -19,6 +19,8 @@
   --color-discounted-price: #02a117;
   --color-button-primary: #6d6f73;
   --color-button-primary-shade: #626367;
+  --color-button-secondary: #7b1fa2;
+  --color-button-secondary-shade: #6e1b91;
 }
 
 @theme inline {
