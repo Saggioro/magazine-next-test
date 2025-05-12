@@ -1,7 +1,7 @@
 import { getViewHeight, getViewWidth } from "@/utils/viewUtils";
 import { useEffect, useState } from "react";
 
-export function useViewportSize() {
+export function useViewSize() {
   const [view, setView] = useState<{ height: number; width: number }>({
     width: 0,
     height: 0,
