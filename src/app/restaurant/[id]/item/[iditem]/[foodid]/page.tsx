@@ -7,7 +7,7 @@ import { useViewSize } from "@/hooks/useViewSize";
 import { useCartStore } from "@/stores/useCartStore";
 import { useRestaurantMenuItemStore } from "@/stores/useRestaurantMenuItemStore";
 import { useRestaurantStore } from "@/stores/useRestaurantStore";
-import { getMinimumItemPrice } from "@/utils/priceUtils";
+import { getMinimumItemPrice, getTotalPrice } from "@/utils/priceUtils";
 import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -93,15 +93,6 @@ const RestaurantItem: React.FC = () => {
     }
   };
 
-  const getTotal = (): number => {
-    return selectedOptions.reduce<number>((acc, cur) => {
-      const totalOption = cur.options.reduce<number>((acc, cur) => {
-        const price = cur.discountedPrice ? cur.discountedPrice : cur.price;
-        return acc + price;
-      }, 0);
-      return acc + totalOption;
-    }, 0);
-  };
   const getCount = () => {
     return cart?.count ? cart.count + 1 : 1;
   };
@@ -112,11 +103,12 @@ const RestaurantItem: React.FC = () => {
     }
     if (!orderId) {
       add(
-        { id: restaurant.id, name: restaurant.name },
+        { id: restaurant.id, name: restaurant.name, image: restaurant.logo },
         {
           id: getCount(),
           itemId: item?.id as number,
           quantity: 1,
+          name: item?.name as string,
           selectedExtras: selectedOptions,
         },
         getCount(),
@@ -124,11 +116,12 @@ const RestaurantItem: React.FC = () => {
       setOrderId(getCount());
     } else {
       add(
-        { id: restaurant.id, name: restaurant.name },
+        { id: restaurant.id, name: restaurant.name, image: restaurant.logo },
         {
           id: orderId,
           itemId: item?.id as number,
           quantity: 1,
+          name: item?.name as string,
           selectedExtras: selectedOptions,
         },
         orderId,
@@ -194,7 +187,12 @@ const RestaurantItem: React.FC = () => {
                 </ThemedText>
 
                 <ThemedText type="bold" size="small">
-                  R$ {getTotal().toFixed(2)}
+                  R${" "}
+                  {getTotalPrice(
+                    selectedOptions,
+                    cart?.items.find((cartItem) => cartItem.id === orderId)
+                      ?.quantity || 1,
+                  ).toFixed(2)}
                 </ThemedText>
               </div>
             </div>
@@ -228,6 +226,17 @@ const RestaurantItem: React.FC = () => {
                   loading="lazy"
                   onClick={addToCart}
                 />
+                <Button
+                  size="lg"
+                  variant="secondary"
+                  onClick={() => {
+                    router.push("/cart");
+                  }}
+                >
+                  <ThemedText size="small" color="headerPrimary">
+                    Ver ticket
+                  </ThemedText>
+                </Button>
               </div>
             ) : (
               <Button
@@ -265,7 +274,7 @@ const RestaurantItem: React.FC = () => {
                   </div>
                   {extra.minimumChoice > 0 && (
                     <div
-                      className={`flex h-10 items-center rounded-md bg-black px-4 font-semibold ${errors.find((err) => err === extra.name) && "outline outline-2 outline-red-500"}`}
+                      className={`flex h-10 items-center rounded-md bg-black px-4 font-semibold ${errors.find((err) => err === extra.name) && "outline-2 outline-red-500"}`}
                     >
                       <ThemedText color="headerPrimary">obrigatório</ThemedText>
                     </div>
