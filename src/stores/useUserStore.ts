@@ -26,7 +26,6 @@ export const useUserStore = create<IUserState>()(
     }),
     {
       name: "@magazine-user-storage",
-      skipHydration: true,
     },
   ),
 );
