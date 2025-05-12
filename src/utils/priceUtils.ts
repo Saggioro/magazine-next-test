@@ -1,3 +1,8 @@
+interface ISelectOptions {
+  extra: string;
+  options: IOption[];
+}
+
 export const checkDiscountMenu = (menu: IMenu) => {
   const hasDiscountOnProduct = menu.items.find(
     (item) => !!item.discountedPrice,
@@ -70,4 +75,19 @@ export const getMinimumItemPrice = (item: IMenuItem) => {
     return acc + minimumValue;
   }, 0);
   return itemWithMinumumExtras;
+};
+
+export const getTotalPrice = (
+  selectedOptions: ISelectOptions[],
+  quantity: number,
+): number => {
+  const totalExtras = selectedOptions.reduce<number>((acc, cur) => {
+    const totalOption = cur.options.reduce<number>((acc, cur) => {
+      const price = cur.discountedPrice ? cur.discountedPrice : cur.price;
+      return acc + price;
+    }, 0);
+    return acc + totalOption;
+  }, 0);
+
+  return totalExtras * quantity;
 };
