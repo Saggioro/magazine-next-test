@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 
-import { useViewportSize } from "@/hooks/useViewSize";
+import { useViewSize } from "@/hooks/useViewSize";
 
 const PromoBanner: React.FC = () => {
-  const { width } = useViewportSize();
+  const { width } = useViewSize();
   return (
     <Image
       src={"/promobanner.png"}

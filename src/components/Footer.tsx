@@ -2,7 +2,7 @@ import { ThemedText } from "./ThemedText";
 
 const Footer: React.FC = () => {
   return (
-    <div className="bg-footer-background flex w-full flex-col items-center justify-center self-end p-10">
+    <div className="bg-footer-background flex w-full flex-col items-center justify-center self-end p-6">
       <ThemedText type="bold" color="footer" size="small">
         Feito com 💜 em maringá-PR
       </ThemedText>

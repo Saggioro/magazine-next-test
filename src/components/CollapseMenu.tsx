@@ -19,7 +19,7 @@ const ColapseMenu: React.FC<PropsWithChildren<IColapseMenuProps>> = ({
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="mb-1 p-2">
+    <div className="border-b-footer-background border-b-4 p-2">
       <div
         className="flex flex-row items-center justify-between"
         onClick={() => setOpen(!open)}
@@ -28,7 +28,7 @@ const ColapseMenu: React.FC<PropsWithChildren<IColapseMenuProps>> = ({
           <Title {...titleProps} />
 
           {description && (
-            <ThemedText type="semiBold" size="large">
+            <ThemedText type="semiBold" size="small" color="subtitle">
               {description}
             </ThemedText>
           )}
@@ -41,7 +41,7 @@ const ColapseMenu: React.FC<PropsWithChildren<IColapseMenuProps>> = ({
           )}
         </div>
       </div>
-      {open && <div className="p-4">{children}</div>}
+      {open && <div className="p-2">{children}</div>}
     </div>
   );
 };

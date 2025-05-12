@@ -2,14 +2,14 @@
 
 import { useEffect } from "react";
 import FlatList from "./FlatList";
-import { useViewportSize } from "@/hooks/useViewSize";
+import { useViewSize } from "@/hooks/useViewSize";
 import { useRestaurantsStore } from "@/stores/useRestaurantsStore";
 import { ThemedText } from "./ThemedText";
 import { useRouter } from "next/navigation";
 import RestaurantCard from "./RestaurantCard";
 
 const RestaurantsList: React.FC = () => {
-  const { height, width } = useViewportSize();
+  const { height, width } = useViewSize();
   const cardSize = 98;
   const restaurants = useRestaurantsStore((state) => state.restaurants) ?? [];
   const fetch = useRestaurantsStore((state) => state.fetchRestaurants);

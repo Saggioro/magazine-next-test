@@ -20,7 +20,9 @@ const Shipping: React.FC<IShippingProps> = ({ restaurant }) => {
       />
       <ThemedText
         type="bold"
-        color={restaurant?.shippingPrice === 0 ? "discount" : "secondaryTitle"}
+        color={
+          restaurant?.shippingPrice === 0 ? "freeShipping" : "secondaryTitle"
+        }
       >
         {restaurant?.shippingPrice === 0
           ? "grátis"
