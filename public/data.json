@@ -29,13 +29,159 @@
               "id": 1,
               "name": "Niguiri de Salmão",
               "description": "Salmão fresco com arroz",
-              "price": 10.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             },
             {
               "id": 2,
               "name": "Niguiri de Atum",
               "description": "Atum fresco com arroz",
-              "price": 12.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -138,20 +284,238 @@
               "id": 1,
               "name": "Califórnia",
               "description": "Kani, pepino e maça ou manga",
-              "price": 17.0,
-              "discountedPrice": 13.99
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             },
             {
               "id": 2,
               "name": "Filadélfia",
               "description": "Arroz, salmão, cream cheese e cebolinha",
-              "price": 13.99
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             },
             {
               "id": 3,
               "name": "Mix",
               "description": "Escolha 3 ingredientes: shimeji, alface americana, rúcula, pepino, tomate seco, cream cheese, maionese, goiabada, banana, requeijão, molho de maracujá, manga, maçã e morango.",
-              "price": 13.99,
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ],
               "flags": ["Picante", "Vegetariano"]
             },
             {
@@ -159,7 +523,80 @@
               "name": "Salmão picante",
               "description": "Alga, arroz, salmão fresco, pimenta e cebolinha",
               "flags": ["Picante"],
-              "price": 13.99
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -171,13 +608,159 @@
               "id": 1,
               "name": "Coca-Cola",
               "description": "Refrigerante de cola",
-              "price": 7.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             },
             {
               "id": 1,
               "name": "Guaraná",
               "description": "Refrigerante de guaraná",
-              "price": 7.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -189,7 +772,80 @@
               "id": 1,
               "name": "Ceviche",
               "description": "Mix de peixes temperados em caldo cítrico, com cebola roxa e cebolinha.",
-              "price": 40.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -216,13 +872,159 @@
               "id": 1,
               "name": "Niguiri de Salmão",
               "description": "Salmão fresco com arroz",
-              "price": 10.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             },
             {
               "id": 2,
               "name": "Niguiri de Atum",
               "description": "Atum fresco com arroz",
-              "price": 12.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -231,15 +1033,14 @@
     {
       "id": 3,
       "name": "Burger King",
-      "open": true,
       "address": "Calle Falsa 123",
       "openingHour": "09:00",
       "closingHour": "20:00",
-
       "phone": "555-1234",
       "cuisine": "Lanches",
       "logo": "/restaurantsImages/bk.png",
-      "shippingPrice": 5,
+      "shippingPrice": 0,
+      "open": true,
       "review": 4.5,
       "menus": [
         {
@@ -250,13 +1051,159 @@
               "id": 1,
               "name": "Niguiri de Salmão",
               "description": "Salmão fresco com arroz",
-              "price": 10.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             },
             {
               "id": 2,
               "name": "Niguiri de Atum",
               "description": "Atum fresco com arroz",
-              "price": 12.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -265,14 +1212,14 @@
     {
       "id": 4,
       "name": "Burger King",
-      "open": true,
       "address": "Calle Falsa 123",
       "openingHour": "09:00",
       "closingHour": "20:00",
       "phone": "555-1234",
       "cuisine": "Lanches",
       "logo": "/restaurantsImages/bk.png",
-      "shippingPrice": 5,
+      "shippingPrice": 0,
+      "open": true,
       "review": 4.5,
       "menus": [
         {
@@ -283,13 +1230,159 @@
               "id": 1,
               "name": "Niguiri de Salmão",
               "description": "Salmão fresco com arroz",
-              "price": 10.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             },
             {
               "id": 2,
               "name": "Niguiri de Atum",
               "description": "Atum fresco com arroz",
-              "price": 12.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -298,14 +1391,14 @@
     {
       "id": 5,
       "name": "Burger King",
-      "open": true,
       "address": "Calle Falsa 123",
       "openingHour": "09:00",
       "closingHour": "20:00",
       "phone": "555-1234",
       "cuisine": "Lanches",
       "logo": "/restaurantsImages/bk.png",
-      "shippingPrice": 5,
+      "shippingPrice": 0,
+      "open": true,
       "review": 4.5,
       "menus": [
         {
@@ -316,13 +1409,159 @@
               "id": 1,
               "name": "Niguiri de Salmão",
               "description": "Salmão fresco com arroz",
-              "price": 10.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             },
             {
               "id": 2,
               "name": "Niguiri de Atum",
               "description": "Atum fresco com arroz",
-              "price": 12.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -331,14 +1570,14 @@
     {
       "id": 6,
       "name": "Burger King",
-      "open": true,
       "address": "Calle Falsa 123",
       "openingHour": "09:00",
       "closingHour": "20:00",
       "phone": "555-1234",
       "cuisine": "Lanches",
       "logo": "/restaurantsImages/bk.png",
-      "shippingPrice": 5,
+      "shippingPrice": 0,
+      "open": true,
       "review": 4.5,
       "menus": [
         {
@@ -349,13 +1588,159 @@
               "id": 1,
               "name": "Niguiri de Salmão",
               "description": "Salmão fresco com arroz",
-              "price": 10.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             },
             {
               "id": 2,
               "name": "Niguiri de Atum",
               "description": "Atum fresco com arroz",
-              "price": 12.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -364,245 +1749,14 @@
     {
       "id": 7,
       "name": "Burger King",
-      "open": true,
       "address": "Calle Falsa 123",
       "openingHour": "09:00",
       "closingHour": "20:00",
       "phone": "555-1234",
       "cuisine": "Lanches",
       "logo": "/restaurantsImages/bk.png",
-      "shippingPrice": 5,
-      "review": 4.5,
-      "menus": [
-        {
-          "id": 1,
-          "name": "Niguiri",
-          "items": [
-            {
-              "id": 1,
-              "name": "Niguiri de Salmão",
-              "description": "Salmão fresco com arroz",
-              "price": 10.0
-            },
-            {
-              "id": 2,
-              "name": "Niguiri de Atum",
-              "description": "Atum fresco com arroz",
-              "price": 12.0
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Burger King",
-      "open": true,
-      "address": "Calle Falsa 123",
-      "openingHour": "09:00",
-      "closingHour": "20:00",
-      "phone": "555-1234",
-      "cuisine": "Lanches",
-      "logo": "/restaurantsImages/bk.png",
-      "shippingPrice": 5,
-      "review": 4.5,
-      "menus": [
-        {
-          "id": 1,
-          "name": "Niguiri",
-          "items": [
-            {
-              "id": 1,
-              "name": "Niguiri de Salmão",
-              "description": "Salmão fresco com arroz",
-              "price": 10.0
-            },
-            {
-              "id": 2,
-              "name": "Niguiri de Atum",
-              "description": "Atum fresco com arroz",
-              "price": 12.0
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "name": "Burger King",
-      "open": true,
-      "address": "Calle Falsa 123",
-      "openingHour": "09:00",
-      "closingHour": "20:00",
-      "phone": "555-1234",
-      "cuisine": "Lanches",
-      "logo": "/restaurantsImages/bk.png",
-      "shippingPrice": 5,
-      "review": 4.5,
-      "menus": [
-        {
-          "id": 1,
-          "name": "Niguiri",
-          "items": [
-            {
-              "id": 1,
-              "name": "Niguiri de Salmão",
-              "description": "Salmão fresco com arroz",
-              "price": 10.0
-            },
-            {
-              "id": 2,
-              "name": "Niguiri de Atum",
-              "description": "Atum fresco com arroz",
-              "price": 12.0
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Burger King",
-      "open": true,
-      "address": "Calle Falsa 123",
-      "openingHour": "09:00",
-      "closingHour": "20:00",
-      "phone": "555-1234",
-      "cuisine": "Lanches",
-      "logo": "/restaurantsImages/bk.png",
-      "shippingPrice": 5,
-      "review": 4.5,
-      "menus": [
-        {
-          "id": 1,
-          "name": "Niguiri",
-          "items": [
-            {
-              "id": 1,
-              "name": "Niguiri de Salmão",
-              "description": "Salmão fresco com arroz",
-              "price": 10.0
-            },
-            {
-              "id": 2,
-              "name": "Niguiri de Atum",
-              "description": "Atum fresco com arroz",
-              "price": 12.0
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Burger King",
-      "open": true,
-      "address": "Calle Falsa 123",
-      "openingHour": "09:00",
-      "closingHour": "20:00",
-      "phone": "555-1234",
-      "cuisine": "Lanches",
-      "logo": "/restaurantsImages/bk.png",
-      "shippingPrice": 5,
-      "review": 4.5,
-      "menus": [
-        {
-          "id": 1,
-          "name": "Niguiri",
-          "items": [
-            {
-              "id": 1,
-              "name": "Niguiri de Salmão",
-              "description": "Salmão fresco com arroz",
-              "price": 10.0
-            },
-            {
-              "id": 2,
-              "name": "Niguiri de Atum",
-              "description": "Atum fresco com arroz",
-              "price": 12.0
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "name": "Burger King",
-      "open": true,
-      "address": "Calle Falsa 123",
-      "openingHour": "09:00",
-      "closingHour": "20:00",
-      "phone": "555-1234",
-      "cuisine": "Lanches",
-      "logo": "/restaurantsImages/bk.png",
-      "shippingPrice": 5,
-      "review": 4.5,
-      "menus": [
-        {
-          "id": 1,
-          "name": "Niguiri",
-          "items": [
-            {
-              "id": 1,
-              "name": "Niguiri de Salmão",
-              "description": "Salmão fresco com arroz",
-              "price": 10.0
-            },
-            {
-              "id": 2,
-              "name": "Niguiri de Atum",
-              "description": "Atum fresco com arroz",
-              "price": 12.0
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "name": "Burger King",
-      "open": true,
-      "address": "Calle Falsa 123",
-      "openingHour": "09:00",
-      "closingHour": "20:00",
-      "phone": "555-1234",
-      "cuisine": "Lanches",
-      "logo": "/restaurantsImages/bk.png",
-      "shippingPrice": 5,
-      "review": 4.5,
-      "menus": [
-        {
-          "id": 1,
-          "name": "Niguiri",
-          "items": [
-            {
-              "id": 1,
-              "name": "Niguiri de Salmão",
-              "description": "Salmão fresco com arroz",
-              "price": 10.0
-            },
-            {
-              "id": 2,
-              "name": "Niguiri de Atum",
-              "description": "Atum fresco com arroz",
-              "price": 12.0
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "name": "Burger King",
+      "shippingPrice": 0,
       "open": false,
-      "address": "Calle Falsa 123",
-      "openingHour": "09:00",
-      "closingHour": "20:00",
-      "phone": "555-1234",
-      "cuisine": "Lanches",
-      "logo": "/restaurantsImages/bk.png",
-      "shippingPrice": 5,
       "review": 4.5,
       "menus": [
         {
@@ -613,13 +1767,159 @@
               "id": 1,
               "name": "Niguiri de Salmão",
               "description": "Salmão fresco com arroz",
-              "price": 10.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             },
             {
               "id": 2,
               "name": "Niguiri de Atum",
               "description": "Atum fresco com arroz",
-              "price": 12.0
+              "extras": [
+                {
+                  "name": "qual o tamanho?",
+                  "limitChoice": 1,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "médio",
+                      "price": 11.9,
+                      "discountedPrice": 19.9
+                    }
+                  ]
+                },
+                {
+                  "name": "acompanhamentos",
+                  "limitChoice": 2,
+                  "minimumChoice": 1,
+                  "options": [
+                    {
+                      "name": "shoyu",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "gengibre",
+                      "price": 0
+                    },
+                    {
+                      "name": "wasabi",
+                      "price": 0
+                    },
+                    {
+                      "name": "sem acompanhamentos",
+                      "price": 0
+                    }
+                  ]
+                },
+                {
+                  "name": "precisa de talher?",
+                  "limitChoice": 1,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "hashi",
+                      "price": 0
+                    },
+
+                    {
+                      "name": "garfo e faca descartável",
+                      "price": 1
+                    }
+                  ]
+                },
+                {
+                  "name": "mais alguma coisa?",
+                  "limitChoice": 2,
+                  "minimumChoice": 0,
+                  "options": [
+                    {
+                      "name": "biscoito da sorte",
+                      "price": 2
+                    },
+
+                    {
+                      "name": "rolinho primavera",
+                      "price": 8
+                    },
+                    {
+                      "name": "guioza",
+                      "price": 6
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
