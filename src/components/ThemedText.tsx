@@ -7,6 +7,7 @@ type VariantColor =
   | "subtitle"
   | "footer"
   | "secondaryTitle"
+  | "freeShipping"
   | "discount";
 
 type VariantSize = "default" | "small" | "large";
@@ -51,7 +52,8 @@ const variantColors: ThemedVariantColor = {
     subtitle: "text-subtitle",
     footer: "text-font-footer",
     secondaryTitle: "text-status-title",
-    discount: "text-free-shipping",
+    freeShipping: "text-free-shipping",
+    discount: "text-discounted-price",
   },
 };
 
