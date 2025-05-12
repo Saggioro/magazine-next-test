@@ -6,15 +6,16 @@ import { useEffect } from "react";
 import Image from "next/image";
 
 const AddressComponent: React.FC = () => {
-  const address = useUserStore((state) => state.user?.address);
-  const fetc = useUserStore((state) => state.fetchUser);
+  const { fetchUser, user } = useUserStore((state) => state);
   useEffect(() => {
-    fetc();
+    if (!user) {
+      fetchUser();
+    }
   }, []);
   return (
     <div className="pb flex flex-row">
       <ThemedText type="semiBold" size="small" color="headerPrimary">
-        {address ? address : "Carregando endereço..."}
+        {user?.address ? user.address : "Carregando endereço..."}
       </ThemedText>
       <Image
         src={"/arrowright.svg"}
