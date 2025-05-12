@@ -7,6 +7,7 @@ import {
   getMinimumPriceWithNoDiscount,
 } from "@/utils/priceUtils";
 import { useRestaurantMenuItemStore } from "@/stores/useRestaurantMenuItemStore";
+import { useRestaurantStore } from "@/stores/useRestaurantStore";
 
 interface IRestaurantMenuContentProps {
   menu: IMenu;
@@ -15,20 +16,14 @@ interface IRestaurantMenuContentProps {
 const RestaurantMenuContent: React.FC<IRestaurantMenuContentProps> = ({
   menu,
 }) => {
-  const { setMenuItem } = useRestaurantMenuItemStore((state) => state);
+  const { restaurant } = useRestaurantStore((state) => state);
 
-  const onClickMenuItem = (item: IMenuItem) => {
-    setMenuItem(item);
-  };
   return (
     <div className="flex flex-col">
       {menu.items.map((item) => (
         <Clickable
-          href="/item"
+          href={`/restaurant/${restaurant?.id}/item/${menu.id}/${item.id}`}
           key={item.name}
-          onClick={() => {
-            onClickMenuItem(item);
-          }}
         >
           <div className="mb-2 flex flex-row justify-between">
             <div className="w-3/5" onClick={() => getMinimumItemPrice(item)}>
