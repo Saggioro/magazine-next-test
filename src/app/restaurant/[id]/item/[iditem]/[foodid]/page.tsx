@@ -2,6 +2,7 @@
 
 import Button from "@/components/Button";
 import IItemExtraOptionProps from "@/components/ItemExtraOption";
+import TextInput from "@/components/TextInput";
 import { ThemedText } from "@/components/ThemedText";
 import { useViewSize } from "@/hooks/useViewSize";
 import { useCartStore } from "@/stores/useCartStore";
@@ -25,6 +26,7 @@ const RestaurantItem: React.FC = () => {
   const { restaurant, fetchRestaurant } = useRestaurantStore((state) => state);
   const { deleteFromCart, add, cart } = useCartStore((state) => state);
   const [selectedOptions, setSelectedOptions] = useState<ISelectOptions[]>([]);
+  const [observation, setObservation] = useState<string>("");
   const [orderId, setOrderId] = useState<number | undefined>();
   const [errors, setErrors] = useState<string[]>([]);
   const validate = () => {
@@ -110,6 +112,7 @@ const RestaurantItem: React.FC = () => {
           quantity: 1,
           name: item?.name as string,
           selectedExtras: selectedOptions,
+          observation,
         },
         getCount(),
       );
@@ -123,6 +126,7 @@ const RestaurantItem: React.FC = () => {
           quantity: 1,
           name: item?.name as string,
           selectedExtras: selectedOptions,
+          observation,
         },
         orderId,
       );
@@ -294,6 +298,15 @@ const RestaurantItem: React.FC = () => {
               </div>
             );
           })}
+          <div className="p-4">
+            <TextInput
+              inputSize={"lg"}
+              onChange={(e) => setObservation(e.target?.value)}
+              value={observation}
+              placeholder="alguma observação do item? • opcional
+ex: tirar algum ingrediente, ponto do prato"
+            />
+          </div>
         </>
       ) : (
         <div>Carregando...</div>

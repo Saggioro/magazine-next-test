@@ -10,6 +10,7 @@ interface ISelectedItem {
   name: string;
   quantity: number;
   itemId: number;
+  observation: string;
   selectedExtras: ISelectOptions[];
 }
 interface ICart {
