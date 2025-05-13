@@ -2,14 +2,14 @@ import Image from "next/image";
 import SelectInput from "./SelectInput";
 import { ThemedText } from "./ThemedText";
 
-interface IItemOptionProps {
+interface IItemExtraOptionProps {
   option: IOption;
   extra: IExtra;
   selected: boolean;
   handleClick: (extra: IExtra, option: IOption) => void;
 }
 
-const ItemOption: React.FC<IItemOptionProps> = ({
+const ItemExtraOption: React.FC<IItemExtraOptionProps> = ({
   option,
   extra,
   handleClick,
@@ -72,4 +72,4 @@ const ItemOption: React.FC<IItemOptionProps> = ({
   );
 };
 
-export default ItemOption;
+export default ItemExtraOption;

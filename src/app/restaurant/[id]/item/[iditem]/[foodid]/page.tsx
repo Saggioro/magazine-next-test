@@ -1,8 +1,7 @@
 "use client";
 
 import Button from "@/components/Button";
-import ItemOption from "@/components/ItemOption";
-import SelectInput from "@/components/SelectInput";
+import IItemExtraOptionProps from "@/components/ItemExtraOption";
 import { ThemedText } from "@/components/ThemedText";
 import { useViewSize } from "@/hooks/useViewSize";
 import { useCartStore } from "@/stores/useCartStore";
@@ -283,7 +282,7 @@ const RestaurantItem: React.FC = () => {
                 </div>
                 {extra.options.map((option) => {
                   return (
-                    <ItemOption
+                    <IItemExtraOptionProps
                       extra={extra}
                       option={option}
                       handleClick={() => handleSelect(extra, option)}
